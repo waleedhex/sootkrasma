@@ -1,0 +1,8 @@
+{
+  "name": "صوتك يرسم",
+  "short_name": "صوتك يرسم",
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "icons": []
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>صوتك يرسم - دخول</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="firebase/firebase-config.js"></script>
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <div id="announcementCard" class="card hidden">
+    <h3 id="annTitle"></h3>
+    <p id="annText"></p>
+    <a id="annLink" href="#" target="_blank"><button id="annButton"></button></a>
+  </div>
+  <div id="login">
+    <h2>🔑 أدخل رمز الغرفة</h2>
+    <input type="text" id="roomCode" placeholder="رمز الغرفة">
+    <button id="enterRoom">انضم</button>
+    <p id="loginError" class="error"></p>
+  </div>
+</body>
+</html>

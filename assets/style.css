@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+  direction: rtl;
+  padding: 20px;
+}
+.hidden {
+  display: none;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+button {
+  margin: 5px;
+  padding: 10px;
+}
+canvas {
+  border: 1px solid #000;
+}

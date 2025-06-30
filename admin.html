@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>صوتك يرسم - إدارة</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="firebase/firebase-config.js"></script>
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <h1>⚙️ لوحة إدارة</h1>
+  <section id="codesSection" class="card">
+    <h2>🔑 إدارة الرموز</h2>
+    <select id="codeType">
+      <option value="D">D</option>
+      <option value="X">X</option>
+    </select>
+    <input type="number" id="codeCount" min="1" max="100" value="1">
+    <button id="genCodesBtn">توليد الرموز</button>
+    <button id="copyCodesBtn">📋 نسخ الرموز</button>
+    <button id="downloadCodesBtn">💾 تحميل codes.json</button>
+    <ul id="codesList"></ul>
+  </section>
+  <section id="announceSection" class="card">
+    <h2>📢 إدارة الإعلان</h2>
+    <input type="text" id="annTitleInput" placeholder="عنوان الإعلان"><br>
+    <textarea id="annTextInput" placeholder="نص الإعلان"></textarea><br>
+    <input type="text" id="annLinkInput" placeholder="رابط الإعلان"><br>
+    <input type="text" id="annButtonInput" placeholder="نص الزر"><br>
+    <button id="updateAnnBtn">🔄 تحديث الإعلان</button>
+  </section>
+</body>
+</html>

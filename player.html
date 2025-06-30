@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>صوتك يرسم - لاعب</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="firebase/firebase-config.js"></script>
+  <script src="assets/script.js" defer></script>
+</head>
+<body>
+  <div id="lobby" class="hidden">
+    <h2>👥 لوبي الغرفة: <span id="roomIdDisplay"></span></h2>
+    <ul id="playerList"></ul>
+    <button id="inviteBtn">📨 دعوة الأصدقاء</button>
+    <button id="startBtn" class="hidden">🚀 ابدأ الجولة</button>
+  </div>
+  <div id="gameArea" class="hidden">
+    <div id="roundInfo" class="card">
+      <p>الجولة: <span id="roundNumber">0</span></p>
+      <p>⏱️ الوقت المتبقي: <span id="timerDisplay">0</span> ثانية</p>
+      <button id="forceVoteBtn" class="hidden">🗳️ ابدأ التصويت الآن</button>
+    </div>
+    <canvas id="drawCanvas" width="300" height="400" class="hidden"></canvas>
+    <div id="guessArea" class="hidden card">
+      <input type="text" id="guessInput" placeholder="أدخل تخمينك">
+      <button id="submitGuess">خمن</button>
+      <p id="guessError" class="error"></p>
+    </div>
+    <div id="voteArea" class="hidden card">
+      <button id="likeBtn">👍</button>
+      <button id="dislikeBtn">👎</button>
+    </div>
+  </div>
+</body>
+</html>
