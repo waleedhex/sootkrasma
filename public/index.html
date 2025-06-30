@@ -2,6 +2,7 @@
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>صوتك يرسم - دخول</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="firebase/firebase-config.js"></script>
@@ -11,11 +12,13 @@
   <div id="announcementCard" class="card hidden">
     <h3 id="annTitle"></h3>
     <p id="annText"></p>
-    <a id="annLink" href="#" target="_blank"><button id="annButton"></button></a>
+    <a id="annLink" href="#" target="_blank">
+      <button id="annButton"></button>
+    </a>
   </div>
-  <div id="login">
+  <div id="loginCard" class="card">
     <h2>🔑 أدخل رمز الغرفة</h2>
-    <input type="text" id="roomCode" placeholder="رمز الغرفة">
+    <input type="text" id="roomCode" placeholder="رمز الغرفة" autocomplete="off">
     <button id="enterRoom">انضم</button>
     <p id="loginError" class="error"></p>
   </div>
